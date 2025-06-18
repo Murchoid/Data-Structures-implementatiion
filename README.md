@@ -77,29 +77,29 @@ Each data structure is implemented in its own folder with:
 ```sh
 git clone https://github.com/Murchoid/data-structures-c.git
 cd data-structures-c
+```
 Compile and run (using Make or CMake):
-sh
-Copy
-Edit
+
+```sh
 cd singly_linked_list
 make
 ./singly_linked_list
+```
 OR
 
-sh
-Copy
-Edit
+```sh
 mkdir build && cd build
 cmake ..
 make
+```
 ✅ Testing
 Some folders include unit tests (using Check for C):
 
-sh
-Copy
-Edit
+```sh
+
 cd tests
 make test
+```
 🤝 Contributing
 We welcome contributions:
 
