@@ -1,115 +1,128 @@
-# Data Structures in C/C++  
+📄 Updated README.md
+markdown
+Copy
+Edit
+# 📘 Data Structures in C
 
-**A collection of common data structures implemented in C/C++ for learning and reference.**  
-
-## 📌 Overview  
-This repository contains implementations of fundamental data structures in **C** and **C++**, along with explanations, usage examples, and performance analysis. Whether you're preparing for coding interviews, learning algorithms, or just refreshing your CS fundamentals, this repo is designed to help!  
-
----
-
-## 📋 Table of Contents  
-1. [**Data Structures Implemented**](#-data-structures-implemented)  
-2. [**How to Use**](#-how-to-use)  
-3. [**Contributing**](#-contributing)  
-4. [**License**](#-license)  
+A complete, well-organized and documented collection of core and advanced data structures implemented in **C**, for both learning and interview preparation.
 
 ---
 
-## 🏗️ Data Structures Implemented  
+## 📦 Structure
 
-### **Linear Data Structures**  
-✅ **Array** – Static & Dynamic implementations  
-✅ **Linked List** – Singly, Doubly, Circular  
-✅ **Stack** (Array & Linked List implementations)  
-✅ **Queue** (Array & Linked List implementations)  
-✅ **Hash Table** (Chaining & Open Addressing)  
+Each data structure is implemented in its own folder with:
 
-### **Non-Linear Data Structures**  
-✅ **Trees**  
-   - Binary Tree  
-   - Binary Search Tree (BST)  
-   - AVL Tree (Self-balancing BST)  
-   - Heap (Min-Heap & Max-Heap)  
-✅ **Graphs**  
-   - Adjacency Matrix & List representations  
-   - BFS & DFS traversals  
-   - Dijkstra's Algorithm (Shortest Path)  
-
-### **Advanced Structures**  
-🔹 **Trie** (Prefix Tree)  
-🔹 **Segment Tree** (Range Queries)  
-🔹 **Disjoint Set (Union-Find)**  
-
-*(More structures will be added over time!)*  
+- `*.c` – Implementation file
+- `*.h` – Header with declarations and structs
+- `main.c` – Example/demo usage
+- `README.md` – Description, operations, time/space complexities
+- `CMakeLists.txt` – Optional build file (per folder)
 
 ---
 
-## 🚀 How to Use  
+## 📋 Table of Contents
 
-### **Cloning the Repository**  
+1. [Implemented Structures](#-implemented-structures)
+2. [Usage Guide](#-usage-guide)
+3. [Build Instructions](#-build-instructions)
+4. [Testing](#-testing)
+5. [Contributing](#-contributing)
+6. [License](#-license)
+
+---
+
+## 🏗️ Implemented Structures
+
+### 🔹 Linear
+- Arrays (static/dynamic)
+- Singly Linked List
+- Doubly Linked List
+- Circular Linked List
+- Stack (Array & Linked List)
+- Queue (Array & Linked List)
+- Deque (Double-Ended Queue)
+
+### 🔹 Hashing
+- Hash Tables (Chaining & Open Addressing)
+- Set & Map via hashing
+
+### 🔹 Trees
+- Binary Tree
+- Binary Search Tree
+- AVL Tree
+- Red-Black Tree
+- Segment Tree
+- B-Tree (Optional)
+- Trie
+
+### 🔹 Heaps
+- Min Heap
+- Max Heap
+- Priority Queue (with Heap)
+
+### 🔹 Graphs
+- Adjacency List / Matrix
+- BFS & DFS
+- Dijkstra’s Algorithm
+- Kruskal’s / Prim’s (MST)
+
+### 🔹 Advanced
+- Disjoint Set (Union-Find)
+- Skip List
+- K-D Tree
+- Fenwick Tree (Binary Indexed Tree)
+- Sparse Table
+
+---
+
+## 🚀 How to Use
+
+### Clone the repo:
 ```sh
-git clone https://github.com/Murchoid/Data-Structures-implementation.git
-cd data-structures-c-cpp
-```
-
-### **Compiling & Running**  
-Each data structure is in its own directory with a `Makefile` (for C) or `CMakeLists.txt` (for C++).  
-
-**Example (Compiling a C program):**  
-```sh
-cd linked-list/singly-linked-list
+git clone https://github.com/Murchoid/data-structures-c.git
+cd data-structures-c
+Compile and run (using Make or CMake):
+sh
+Copy
+Edit
+cd singly_linked_list
 make
 ./singly_linked_list
-```
+OR
 
-**Example (Compiling a C++ program):**  
-```sh
-cd binary-search-tree
+sh
+Copy
+Edit
 mkdir build && cd build
 cmake ..
 make
-./bst_example
-```
+✅ Testing
+Some folders include unit tests (using Check for C):
 
-### **Running Tests**  
-Some implementations include test cases (using frameworks like **Google Test** for C++ or **Check** for C).  
-
-```sh
+sh
+Copy
+Edit
 cd tests
 make test
-```
+🤝 Contributing
+We welcome contributions:
 
----
+New data structures
 
-## 🤝 Contributing  
-Contributions are welcome! If you want to:  
-- **Add a new data structure**  
-- **Improve an existing implementation**  
-- **Fix a bug**  
-- **Add better documentation**  
+Edge case handling
 
-### **Steps to Contribute**  
-1. **Fork** the repository.  
-2. **Create a branch** (`git checkout -b new-feature`).  
-3. **Commit changes** (`git commit -am 'Added XYZ data structure'`).  
-4. **Push** (`git push origin new-feature`).  
-5. **Open a Pull Request** with a clear description.  
+Code clean-up
 
-*(See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.)*  
+Documentation
 
----
+Please follow our CONTRIBUTING.md for more.
 
-## 📜 License  
-This project is licensed under the **MIT License** – see [LICENSE](LICENSE) for details.  
+📜 License
+Licensed under the MIT License. See LICENSE.
 
----
+🙌 Acknowledgments
+Inspired by CLRS and university-level DSA courses.
 
-## 🙌 Acknowledgements  
-- Inspired by classic CS books (*CLRS, Algorithm Design Manual*)  
-- Special thanks to contributors & open-source community  
+Big thanks to contributors and the open-source community.
 
----
-
-✨ **Happy Coding!** ✨  
-
----
+✨ Happy Coding and Learning! ✨
