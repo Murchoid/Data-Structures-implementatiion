@@ -1,7 +1,3 @@
-📄 Updated README.md
-markdown
-Copy
-Edit
 # 📘 Data Structures in C
 
 A complete, well-organized and documented collection of core and advanced data structures implemented in **C**, for both learning and interview preparation.
