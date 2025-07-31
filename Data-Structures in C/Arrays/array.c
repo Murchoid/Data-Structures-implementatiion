@@ -3,22 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
-
-
-typedef enum{
-    INT_TYPE,
-    CHAR_TYPE,
-    FLOAT_TYPE,
-}array_type;
-
-typedef struct arrayType{
-    array_type type;
-    size_t size;
-    size_t capacity;
-    size_t elemSize;
-    void *data;
-}array;
-
+#include "array.h"
 
 void initArray(array *arr, array_type type, size_t capacity){
     arr->size = 0;
@@ -44,10 +29,10 @@ void initArray(array *arr, array_type type, size_t capacity){
 }
 
 
-void insert(array *arr, void* elem){
+void push(array *arr, void* elem){
 
     if(arr->size >= arr->capacity){
-        printf("Array is full cant insert!");
+        printf("Array is full cant push!");
         return;
     }
 
@@ -138,28 +123,4 @@ void traverse(array *arr){
             break;
         }
     }
-}
-
-int main(){
-
-    array intArray;
-
-    initArray(&intArray, INT_TYPE, 10);
-    int a = 5, b = 1, c = 10, d = 13;
-    insert(&intArray, &a);
-    insert(&intArray, &b);
-    insert(&intArray, &c);
-    insert(&intArray, &d);
-    
-    traverse(&intArray);
-    bool isInArray = search(&intArray, &a);
-
-    if(isInArray)
-        printf("\n%d is in the array!", a);
-    else
-        printf("\n%d is not in array", a);
-    
-    del(&intArray, &b);
-    traverse(&intArray);
-    return 0;
 }
