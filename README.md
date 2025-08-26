@@ -111,11 +111,6 @@ Code clean-up
 
 Documentation
 
-Please follow our CONTRIBUTING.md for more.
-
-📜 License
-Licensed under the MIT License. See LICENSE.
-
 🙌 Acknowledgments
 Inspired by CLRS and university-level DSA courses.
 
