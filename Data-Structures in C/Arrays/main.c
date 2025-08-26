@@ -1,5 +1,7 @@
-#include "array.c"
+#include "array.h"
 #include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 int main(){
 
@@ -7,10 +9,10 @@ int main(){
 
     initArray(&intArray, INT_TYPE, 10);
     int a = 5, b = 1, c = 10, d = 13;
-    insert(&intArray, &a);
-    insert(&intArray, &b);
-    insert(&intArray, &c);
-    insert(&intArray, &d);
+    push(&intArray, &a);
+    push(&intArray, &b);
+    push(&intArray, &c);
+    push(&intArray, &d);
     
     traverse(&intArray);
     bool isInArray = search(&intArray, &a);
@@ -22,5 +24,7 @@ int main(){
     
     del(&intArray, &b);
     traverse(&intArray);
+
+    free(intArray.data);
     return 0;
 }
