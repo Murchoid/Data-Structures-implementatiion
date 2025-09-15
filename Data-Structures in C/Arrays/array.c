@@ -111,13 +111,13 @@ void traverse(array *arr){
         switch (arr->type)
         {
         case INT_TYPE:
-            printf("%d ", *(int *)elem);
+            printf("%d \n", *(int *)elem);
             break;
         case CHAR_TYPE:
-            printf("%c ", *(char *)elem);
+            printf("%c \n", *(char *)elem);
             break;
         case FLOAT_TYPE:
-            printf("%f ", *(float *)elem);
+            printf("%f \n", *(float *)elem);
             break;
         
         default:

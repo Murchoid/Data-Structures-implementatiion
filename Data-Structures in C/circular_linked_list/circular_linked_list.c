@@ -1,12 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-
-typedef struct  Node
-{
-    int data;
-    struct Node* next;
-}Node;
+#include "circular_linked_list.h"
 
 void insertInNode(int data, Node** head){
     Node* temp = (Node*)malloc(sizeof(Node));
@@ -34,17 +29,5 @@ void readDataInNode(Node* head){
         temp=temp->next;
     }
     temp = temp->next;
-    printf("The next node should be the head: %d", temp->data);
-}
-
-int main(){
-    Node* head = NULL;
-
-    insertInNode(1, &head);
-    insertInNode(2, &head);
-    insertInNode(3, &head);
-    insertInNode(4, &head);
-    insertInNode(5, &head);
-
-    readDataInNode(head);
+    printf("The next node should be the head: %d\n", temp->data);
 }
