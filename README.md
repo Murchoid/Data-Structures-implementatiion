@@ -36,7 +36,6 @@ Each data structure is implemented in its own folder with:
 - Circular Linked List
 - Stack (Array & Linked List)
 - Queue (Array & Linked List)
-- Deque (Double-Ended Queue)
 
 ### 🔹 Hashing
 - Hash Tables (Chaining & Open Addressing)
